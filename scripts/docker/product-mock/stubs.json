@@ -1,0 +1,119 @@
+{
+  "mappings": [
+    {
+      "id": "658d05e8-55a6-4d78-ac5d-166fd667ecaa",
+      "name": "Product-Service Create Product",
+      "request": {
+        "url": "/product-service/v1/products",
+        "method": "POST"
+      },
+      "response": {
+        "status": 201,
+        "jsonBody": {
+          "id": 1,
+          "productType": "COSMIC_CATNIP",
+          "name": "COSMIC CATNIP",
+          "description": "Launch your feline into a purr-fueled galaxy of delight with COSMIC CATNIP! This premium, all-natural catnip blend is specially curated to send cats into orbit with joy. Perfect for playtime, scratching posts, and toys, it’s the ultimate way to entertain your furry astronaut. Give your kitty a taste of the cosmos today!",
+          "price": 9.99,
+          "category": {
+            "id": 1,
+            "name": "Animal Care"
+          }
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "id": "22f8d5d1-8569-40ee-9e9d-4ca6447b8e6b",
+      "name": "Product-Service Get Product By Id",
+      "request": {
+        "url": "/product-service/v1/products/1",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "jsonBody": {
+          "id": 1,
+          "productType": "COSMIC_CATNIP",
+          "name": "COSMIC CATNIP",
+          "description": "Launch your feline into a purr-fueled galaxy of delight with COSMIC CATNIP! This premium, all-natural catnip blend is specially curated to send cats into orbit with joy. Perfect for playtime, scratching posts, and toys, it’s the ultimate way to entertain your furry astronaut. Give your kitty a taste of the cosmos today!",
+          "price": 9.99,
+          "category": {
+            "id": 1,
+            "name": "Animal Care"
+          }
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "id": "2c87f204-bec5-46a7-b49a-e33933d21bb9",
+      "name": "Product-Service Get All Products",
+      "request": {
+        "url": "/product-service/v1/products",
+        "method": "GET"
+      },
+      "response": {
+        "status": 200,
+        "jsonBody": {
+          "productDetailsEntries": [
+            {
+              "id": 1,
+              "productType": "COSMIC_CATNIP",
+              "name": "COSMIC CATNIP",
+              "description": "Launch your feline into a purr-fueled galaxy of delight with COSMIC CATNIP! This premium, all-natural catnip blend is specially curated to send cats into orbit with joy. Perfect for playtime, scratching posts, and toys, it’s the ultimate way to entertain your furry astronaut. Give your kitty a taste of the cosmos today!",
+              "price": 9.99,
+              "category": {
+                "id": 1,
+                "name": "Animal Care"
+              }
+            }
+          ]
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "id": "6e61a965-2fc5-4208-9b2d-296807f3ea50",
+      "name": "Product-Service Update Product By Id",
+      "request": {
+        "url": "/product-service/v1/products/1",
+        "method": "PUT"
+      },
+      "response": {
+        "status": 200,
+        "jsonBody": {
+          "id": 1,
+          "productType": "COSMIC_CATNIP",
+          "name": "COSMIC CATNIP",
+          "description": "Unleash the universe of fun for your feline with COSMIC CATNIP! This potent, 100% organic catnip is carefully crafted to ignite your cat’s playful instincts and keep them entertained for hours. Sprinkle it on toys, scratching posts, or anywhere your kitty loves to explore, and watch them blast off into a realm of pure joy. COSMIC CATNIP: where every sprinkle is a starry adventure!",
+          "price": 7.99,
+          "category": {
+            "id": 1,
+            "name": "Animal Care"
+          }
+        },
+        "headers": {
+          "Content-Type": "application/json"
+        }
+      }
+    },
+    {
+      "id": "ded798d3-7d1b-4cef-a850-0abb9663a487",
+      "name": "Product-Service Delete Product By Id",
+      "request": {
+        "url": "/product-service/v1/products/1",
+        "method": "DELETE"
+      },
+      "response": {
+        "status": 200
+      }
+    }
+  ]
+}
